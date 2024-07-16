@@ -1,0 +1,36 @@
+.title {
+    text-align: center;
+}
+
+.cidadesLista tr {
+    height: 30px;
+}
+
+.cidadesLista td {
+    text-align: center;
+    width: 50%;
+}
+
+.cidadesLista a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bottomPage tr {
+    height: 50px;
+}
+
+.bottomPage a {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.aldeiaLista tr {
+    height: 300px;
+}
+
+.aldeiaLista tr td img {
+    height: 250px;
+    width: auto;
+}
