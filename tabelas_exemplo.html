@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+    <table border="1" width="300" height="150">
+        <tr>
+            <td> 1 </td>
+            <td> 2 </td>
+            <td rowspan="3"> 3 </td>
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td rowspan="2"> 5 </td>
+        </tr>
+        <tr>
+            <td> 6 </td>
+        </tr>
+    </table>
+    <br />
+
+    <table border="1" width="300" height="150">
+        <tr>
+            <td> &nbsp; </td>
+            <td rowspan="2" colspan="2"> </td>
+        </tr>
+        <tr>
+            <td> &nbsp; </td>
+        </tr>
+        <tr>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+
+        </tr>
+    </table>
+    <br />
+
+    <table border="1" width="300" height="150">
+        <thead style="background-color: yellow;">
+            <tr>
+                <th> Cidade </th>
+                <th> População </th>
+            </tr>
+        </thead>
+        <tbody style="background-color: blueviolet;">
+            <tr>
+                <td> Lisboa </td>
+                <td> 500.000 </td>
+            </tr>
+            <tr>
+                <td> Porto </td>
+                <td> 200.000 </td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color:cadetblue">
+            <tr>
+                <td> Total </td>
+                <td> 700.000 </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
