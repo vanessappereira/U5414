@@ -1,0 +1,41 @@
+.title {
+  text-align: center;
+}
+
+.cidadesLista {
+  text-align: center;
+  height: 20px;
+  background-color: grey;
+  position: sticky;
+  padding: 2%;
+  top: 0px;
+}
+
+.cidadesLista a {
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.imgCenter {
+  align-items: center;
+}
+
+.left {
+  float: left;
+  width: 45%;
+  margin-left: auto;
+}
+.right {
+  float: right;
+  width: 45%;
+  margin-right: auto;
+}
+
+.bottomPage {
+  height: 50px;
+}
+
+.bottomPage a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
