@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
     <title>Marialva</title>
-  </head>
+</head>
 
-  <body>
-    <div>
-      <table border="1" width="100%" id="top">
-        <thead class="title">
-          <tr>
-            <th colspan="2">
-              <h1>Aldeias históricas</h1>
-            </th>
-          </tr>
-        </thead>
-        <tbody class="cidadesLista">
-          <tr>
-            <td colspan="2">
-              <a href="../pages/almeida.html">Almeida</a>
-              <a href="../pages/castelo_rodrigo.html">Castelo Rodrigo</a>
-              <a href="../pages/linhares_beira.html">Linhares da Beira</a>
-              <a href="../pages/marialva.html">Marialva</a>
-              <a href="../pages/monsanto.html">Monsanto</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                Marialva fica a poucos minutos da cidade de Mêda. Esta Aldeia
-                Histórica, num cenário que revela uma das relíquias vivas da
-                ancestralidade portuguesa, transporta o visitante às raízes mais
-                profundas da história do país. As ruas, ladeadas por edifícios
-                resistentes ao tempo, conduzem à cidadela cercada pelas muralhas
-                cujas ruínas é fácil perder a noção do tempo. Povoada pelos
-                aravos, povo lusitano, foi posteriormente conquistada pelos
-                romanos, seguidos dos árabes, até à vitória final de D.
-                Fernando, o Magno, em 1063, na sua emblemática conquista das
-                Beiras.
-              </p>
-            </td>
-            <td>
-              <img
-                src="../images/marialva/marialva1.jpg"
-                alt="marialva1"
-                width="400"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <h2>História</h2>
-              <p>
+<body>
+    <!-- Titulo feito  -->
+    <header class="titleGroup">
+        <img src="../images/castle.svg" alt="castle" height="auto" />
+        <h1> Aldeias históricas </h1>
+    </header>
+    <!-- Navbar feita -->
+    <div class="navSticky">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> Home </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="almeida.html">Almeida</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="castelo_rodrigo.html">Castelo Rodrigo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="linhares_beira.html">Linhares da Beira</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="marialva.html">Marialva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="monsanto.html">Monsanto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- About feito -->
+    <section class="about">
+        <h1>Marialva</h1>
+        <p>
+            Marialva fica a poucos minutos da cidade de Mêda. Esta Aldeia
+            Histórica, num cenário que revela uma das relíquias vivas da
+            ancestralidade portuguesa, transporta o visitante às raízes mais
+            profundas da história do país. As ruas, ladeadas por edifícios
+            resistentes ao tempo, conduzem à cidadela cercada pelas muralhas
+            cujas ruínas é fácil perder a noção do tempo. Povoada pelos
+            aravos, povo lusitano, foi posteriormente conquistada pelos
+            romanos, seguidos dos árabes, até à vitória final de D.
+            Fernando, o Magno, em 1063, na sua emblemática conquista das
+            Beiras.
+        </p>
+    </section>
+    <!-- Historia feita -->
+    <section class="history">
+        <img id="img-city" src="../images/marialva/marialva1.jpg" alt="marialva1" />
+        <div class="right">
+            <h2>História</h2>
+            <p>
                 A Aldeia de Marialva dista 7 Km da sede do concelho da Mêda, na
                 margem esquerda da ribeira de Marialva. É constituída por três
                 núcleos distintos: a Cidadela ou Vila no interior do Castelo,
@@ -61,83 +76,81 @@
                 zona amuralhada; e a Devesa, situada a sul da cidadela, que se
                 estende pela planície até à ribeira de Marialva, e assenta sobre
                 a antiga cidade romana.
-                <br />
+            </p>
+            <p>
                 De facto, as origens longínquas de Marialva parecem remontar ao
                 tempo da antiga Cidade de Aravor, fundada pelos Túrdulos no séc.
                 VI a.C. Este castro, situado numa eminência rochosa sobranceira
                 aos campos da Devesa, foi o principal núcleo da comunidade dos
                 Aravos, sendo conhecido por Castro dos Aravos.
-                <br />
-                Com a chegada dos Romanos o nome alterou-se para Civitas
-                Aravorum, que foi reconstruida no tempo de Adriano e Trajano,
-                tendo sido um importante ponto de confluência e cruzamento de
-                vias, entre as quais a Via Imperial da Guarda a Numão. Os Godos
-                instalaram-se também no monte, primeira ocupação cristã,
-                mudando-lhe o nome para S. Justo. A esta ocupação seguiram-se os
-                Árabes que terão dado à cidadela o nome de Malva, que
-                reconquistada por D. Fernando Magno de Leão em 1063, lhe chamou
-                Marialva.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img
-                src="../images/marialva/marialva3.jpg"
-                alt="marialva3"
-                width="400"
-              />
-            </td>
-            <td>
-              <p>
-                Despovoada pelas lutas da Reconquista, D. Afonso Henriques
-                mandou-a repovoar e concedeu-lhe o primeiro foral (1179). D.
-                Sancho I reconquistou-a em 1200, altura em que o povoado
-                extravasou a cerca amuralhada, formando-se assim o Arrabalde que
-                apresenta uma malha urbana de traçado predominantemente
-                medieval, onde proliferam igrejas, capelas, casas quinhentistas
-                e senhoriais, a par de um conjunto de habitações rurais com
-                características típicas da casa beirã. D. Dinis, que criou a
-                Feira em 1286, e D. Manuel, que lhe concedeu Foral Novo (1512),
-                procederam a obras no castelo, transformando Marialva numa das
-                mais imponentes e fortes praças de guerra do reino.
-                <br />
+            </p>
+        </div>
+    </section>
+
+    <div style="clear: both;"></div>
+    <!-- Historia II feita -->
+    <section class="about">
+        <p>
+            Com a chegada dos Romanos o nome alterou-se para Civitas
+            Aravorum, que foi reconstruida no tempo de Adriano e Trajano,
+            tendo sido um importante ponto de confluência e cruzamento de
+            vias, entre as quais a Via Imperial da Guarda a Numão. Os Godos
+            instalaram-se também no monte, primeira ocupação cristã,
+            mudando-lhe o nome para S. Justo. A esta ocupação seguiram-se os
+            Árabes que terão dado à cidadela o nome de Malva, que
+            reconquistada por D. Fernando Magno de Leão em 1063, lhe chamou
+            Marialva.
+        </p>
+        <p>
+            Despovoada pelas lutas da Reconquista, D. Afonso Henriques
+            mandou-a repovoar e concedeu-lhe o primeiro foral (1179). D.
+            Sancho I reconquistou-a em 1200, altura em que o povoado
+            extravasou a cerca amuralhada, formando-se assim o Arrabalde que
+            apresenta uma malha urbana de traçado predominantemente
+            medieval, onde proliferam igrejas, capelas, casas quinhentistas
+            e senhoriais, a par de um conjunto de habitações rurais com
+            características típicas da casa beirã. D. Dinis, que criou a
+            Feira em 1286, e D. Manuel, que lhe concedeu Foral Novo (1512),
+            procederam a obras no castelo, transformando Marialva numa das
+            mais imponentes e fortes praças de guerra do reino.
+        </p>
+    </section>
+    <div class="imagesCity">
+        <img id="img-city" src="../images/marialva/marialva2.jpg" alt="marialva2" />
+        <img id="img-city" src="../images/marialva/marialva3.jpg" alt="marialva3" />
+    </div>
+    <div style="clear: both;"></div>
+    <!-- Historia II feita -->
+    <section class="history">
+        <div id="final-text">
+            <p>
                 Dada a localização fronteiriça de Marialva - e estimulada pela
                 Feira (dia 15 de cada mês) que concedia diversos privilégios aos
                 moradores e feirantes - iniciou-se no séc. XIII a fixação de
                 judeus, cujo número aumentou durante o reinado de D. Manuel
                 formando mesmo uma judiaria.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <p>
+            </p>
+            <p>
                 D. Afonso V deu o título de Conde de Marialva a D. Vasco
                 Coutinho (1440), que se destacara nas campanhas militares do
                 Norte de África; mais tarde passou a marquesado por mercê de D.
                 Afonso VI (1675), tendo sido primeiro Marquês de Marialva D.
                 António Luís de Menezes, terceiro Conde de Cantanhede, pelo seu
                 papel decisivo na Revolução de 1640.
-                <br />
+            </p>
+            <p>
                 Em 1855 foi suprimido o concelho de Marialva, que passou a
                 englobar o de Vila Nova de Foz Côa. Em 1872, Marialva foi
                 incorporada no concelho de Mêda.
-              </p>
-            </td>
-          </tr>
-        </tbody>
-        <tfoot class="bottomPage">
-          <tr>
-            <td style="text-align: left">
-              <a href="#top">Voltar ao topo</a>
-            </td>
-            <td style="text-align: right">
-              <a href="../default.html">Voltar à página principal</a>
-            </td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-  </body>
+            </p>
+        </div>
+        <img class="right" id="img-city" src="../images/marialva/marialva4.jpg" alt="marialva4" />
+    </section>
+    <!-- Footer feito -->
+    <footer class="bottomPage">
+        <a href="#top">Voltar ao topo</a>
+        <a href="../default.html">Voltar à página principal</a>
+    </footer>
+</body>
+
 </html>

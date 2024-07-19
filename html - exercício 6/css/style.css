@@ -1,41 +1,112 @@
-.title {
-  text-align: center;
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.cidadesLista {
-  text-align: center;
-  height: 20px;
-  background-color: grey;
-  position: sticky;
-  padding: 2%;
-  top: 0px;
+body {
+  margin: 15px;
+  font-family: Arial, sans-serif;
 }
 
-.cidadesLista a {
-  vertical-align: middle;
-  margin-left: 20px;
-  margin-right: 20px;
+img {
+  width: 40%;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+  /* Estilo arredondado */
+  border-radius: 10px;
 }
-.imgCenter {
+
+/* Title Group Styles */
+.titleGroup {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.left {
-  float: left;
-  width: 45%;
-  margin-left: auto;
+.titleGroup h1 {
+  margin: 20px;
 }
-.right {
-  float: right;
-  width: 45%;
-  margin-right: auto;
+
+.titleGroup img {
+  width: 90px;
+  height: 90px;
+  /* Estilo arredondado */
+  border-radius: 30%;
 }
+
+/* Navigation Styles */
+.navSticky {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  z-index: 100;
+}
+
+/* About Styles */
+.about {
+  margin-left: 7.5px;
+}
+
+/* History Styles */
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.history .right {
+  flex: 1;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  align-self: center;
+}
+
+.imagesCity {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-items: center;
+  justify-content: space-between;
+  /* Estilo arredondado */
+  border-radius: 10px;
+}
+
+#img-city {
+  width: 40%;
+  height: auto;
+}
+
+#final-text {
+  align-self: center;
+  width: 50%;
+}
+
+/* Bottom Page Styles */
 
 .bottomPage {
   height: 50px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .bottomPage a {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #337ab7;
+  /* add a default text color */
 }
