@@ -4,21 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Javascript</title>
 </head>
 
 <body>
-
+    <h1>Welcome to exercise 8 </h1>
     <main>
-        <h1>Welcome to Prime Numbers! </h1>
+        <hr>
+        <div>
+            <h2>Prime Numbers!</h2>
 
-        <!-- Input for number -->
-        <input type="text" id="number" placeholder="Number">
-        <button type="button" onclick="isPrime()"> Verificar </button>
-        <p id="result"></p>
+            <div class="buttones">
+                <!-- Input for number -->
+                <input type="text" id="number" placeholder="Number">
+                <button type="button" onclick="isPrime()"> Verificar </button>
+            </div>
+            <div class="resultconfigs">
+                <p id="result"></p>
+            </div>
+        </div>
+        <hr>
+        <div class="opArit">
+            <h2> Operações Aritméticas </h2>
+            <!-- Input for number -->
+            Valor 1 <input type="text" id="number1" placeholder="Value 1">
+            <br />
+            Valor 2 <input type="text" id="number2" placeholder="Value 2">
 
+            <div class="buttones">
+                <button class="button" type="button" onclick="sum()">+</button>
+                <button class="button" type="button" onclick="sub()">-</button>
+                <button class="button" type="button" onclick="multi()">*</button>
+                <button class="button" type="button" onclick="div()">/</button>
+            </div>
+            <div class="resultconfigs">
+                <p id="resultOp"></p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h2>Calculadora de Circunferência</h2>
+
+            <label for="radius">Raio:</label>
+            <input type="number" id="radius" placeholder="Insira o valor do raio">
+            <div class="buttones">
+                <button onclick="calcCircunferencia()">Calcular</button>
+            </div>
+            <div class="resultconfigs">
+                <p id="perimeter">Perímetro: </p>
+                <p id="area">Área: </p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h2>Calculadora de Triângulos </h2>
+
+            <label for="side1">Lado 1:</label>
+            <input type="number" id="lado1" placeholder="Insira o valor 1">
+            <br />
+
+            <label for="side2">Lado 2:</label>
+            <input type="number" id="lado2" placeholder="Insira o valor 2">
+            <br />
+
+            <label for="side1">Lado 3:</label>
+            <input type="number" id="lado3" placeholder="Insira o valor 3">
+            <div class="buttones">
+                <button onclick="calcPerimetro()">Calcular</button>
+            </div>
+            <div class="resultconfigs">
+                <p id="perimeterTriangulo">Perímetro: </p>
+                <p id="areaTriangulo">Área: </p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h2>Calcular Fahrenheit</h2>
+
+            <div class="buttones">
+                <!-- Input for number -->
+                <input type="text" id="celsius" placeholder="Temperatura em Celsius">
+                <button type="button" onclick="isItHot()"> Calcular </button>
+            </div>
+            <div class="resultconfigs">
+                <p id="resultFah">Temperatura em Fahrenheit: </p>
+            </div>
+        </div>
+        <hr>
     </main>
-
 </body>
 <script src="index.js" charset="utf-8"></script>
 
