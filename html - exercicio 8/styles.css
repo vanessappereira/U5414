@@ -2,6 +2,10 @@ main {
     display: flex;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 .button {
     background-color: #04AA6D;
     border: none;
