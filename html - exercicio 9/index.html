@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+
+<body>
+    <h1>Welcome to exercise 9 </h1>
+    <main>
+        <hr>
+        <div class="checkYear">
+            <h2>Anos comuns e Bissextos</h2>
+            <div>
+                <!-- Input for year -->
+                <label for="year">Ano</label>
+                <input type="text" id="year" placeholder="Year">
+
+                <br />
+
+                <button type="button" onclick="verificarAno()"> Verificar </button>
+            </div>
+            <div class="resultconfigs">
+                <p id="resultYear">Tipo: </p>
+            </div>
+        </div>
+        <hr>
+        <div class="precoIva">
+            <h2>Calcular Preço + IVA</h2>
+            <div>
+                <!-- Input for base Value -->
+                <form>
+                    <label for="baseValue">Valor base</label>
+                    <input type="text" id="baseValue" placeholder="Introduza o valor base">
+                    <br>
+
+                    <input type="radio" id="iva6" value="6" name="iva"> 6 %
+                    <br>
+
+                    <input type="radio" id="iva13" value="13" name="iva"> 13 %
+                    <br>
+
+                    <input type="radio" id="iva23" value="23" name="iva"> 23 %
+                </form>
+
+            </div>
+            <div class="resultconfigs">
+                <button type="button" onclick="calcIVA()"> Calcular </button>
+                <p id="resultIVA"> </p>
+            </div>
+        </div>
+        <hr>
+        <div class="primos">
+            <h2>Números Primos e compostos</h2>
+            <div>
+                <!-- Input for number -->
+                <label for="numberInput">Número</label>
+                <input type="text" id="numberInput" placeholder="Introduza o número">
+
+                <br />
+
+                <button type="button" onclick="verificarNumero()"> Verificar </button>
+
+                <p id="resultDivisores">Nº divisores: </p>
+                <p id="resultNumber">Tipo: </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="factorial">
+            <h2>Calcular Fatorial</h2>
+            <div>
+                <!-- Input for number -->
+                <label for="numberInput">Número</label>
+                <input type="text" id="numberInput" placeholder="Introduza o número">
+                <br />
+
+                <button type="button" onclick="fatorial()"> Calcular iterativo </button>
+                <button type="button" onclick="fatorialRecursivo()"> Calcular recursivo
+                </button>
+
+                <p id="resultFactorial"></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="fibonacci">
+            <h2>Calcular Fibonacci</h2>
+            <div>
+                <!-- Input for number -->
+                <label for="numberInput">Número</label>
+                <input type="text" id="fibonacciInput" placeholder="Introduza o número">
+                <br />
+
+                <button type="button" onclick="fibonacciIteractive()"> Calcular iterativo </button>
+                <button type="button" onclick="fibonacciRecursive()"> Calcular Recursivo </button>
+
+                <p id="resultFibonacci"></p>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="index.js" charset="utf-8"></script>
+
+</html>

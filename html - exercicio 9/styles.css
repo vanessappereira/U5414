@@ -1,0 +1,41 @@
+main {
+    display: flex;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 50px;
+    font-size: medium;
+}
+
+.button:hover {
+    background-color: #a15de0;
+    color: rgb(233, 236, 15);
+}
+
+.opArit {
+    margin-top: 12px;
+}
+
+.buttones {
+    margin-top: 20px;
+}
+
+.resultconfigs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
