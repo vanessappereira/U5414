@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar NIF 2</title>
+</head>
+
+<body>
+<main>
+    <section>
+        <h1>Validar NIF 2</h1>
+            <input type="text" id="nif" placeholder="Digite o NIF">
+            <button id="btn" onclick="validarNIF()">Verificar</button>
+            <hr>
+            <div id="loading" style="display: none;">Carregando...</div>
+            
+            <div id="resultado">
+                <p>NIF: <span id="resultNIF"></span></p>
+                <p>Formato válido? <span id="format"></span></p>
+                <p>Organização: <span id="company"></span></p>
+                <p>Morada: <span id="address"></span></p>
+            </div>
+    </section>
+</main>
+
+
+
+
+</body>
+<script src="validarNIF2.js"></script>
+
+</html>
