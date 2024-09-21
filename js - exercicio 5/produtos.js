@@ -1,6 +1,9 @@
 async function fetchData() {
-    const listaPaisesElement = document.getElementById('listaPaises');
-    const url = 'https://restcountries.com/v3.1/all';
+    const url = 'https://fakestoreapi.com/products';
+    const listaProdutosElement = document.getElementById('listaProdutos');
+
+    const searchParams = new URLSearchParams(window.location.search);
+    let id = searchParams.get('id');
 
     try {
         const response = await fetch(url);
@@ -9,9 +12,9 @@ async function fetchData() {
         }
         const data = await response.json();
 
-        // Create Pagination
+        // Create pagination
         let currentPage = 1;
-        const itemsPerPage = 15;
+        const itemsPerPage = 5;
         const totalPages = Math.ceil(data.length / itemsPerPage);
 
         // Create function to display Table
@@ -30,38 +33,41 @@ async function fetchData() {
             // Create table header row
             const headerRow = document.createElement('tr');
             const headerCell = document.createElement('th');
-            headerCell.textContent = 'País';
+            headerCell.textContent = 'Productos';
             headerRow.appendChild(headerCell);
             thead.appendChild(headerRow);
             table.appendChild(thead);
 
-
-            // Create table rows with flags and country names
-            slicedData.forEach((country) => {
+            // Create table rows with images and product name
+            slicedData.forEach((product) => {
                 const row = document.createElement('tr');
-                const flagCell = document.createElement('td');
+                const imageCell = document.createElement('td');
                 const nameCell = document.createElement('td');
 
-                // Construct flag URL using country code
-                const flagURL = `https://flagcdn.com/48x36/${country.cca2.toLowerCase()}.png`;
-                const flagImg = document.createElement('img');
-                flagImg.src = flagURL;
-                flagCell.appendChild(flagImg);
+                // Construct Image
+                const imgSrc = product.image;
+                const productImg = document.createElement('img');
+                productImg.src = imgSrc;
+                imageCell.appendChild(productImg);
+                productImg.style.height = '100px';
 
-                console.log(country.cca2);
+                // Create hyperlink for product name
+                const productNameLink = document.createElement('a');
+                productNameLink.href = `produto.html?id=${product.id}`;
+                productNameLink.style.textDecoration = 'none';
+                productNameLink.textContent = product.title;
 
                 // Set content and append elements
-                nameCell.textContent = country.name.common;
-                row.appendChild(flagCell);
+                nameCell.appendChild(productNameLink);
+                row.appendChild(imageCell);
                 row.appendChild(nameCell);
                 tbody.appendChild(row);
             });
-
             table.appendChild(tbody);
 
             // Clear previous table and append new one
-            listaPaisesElement.innerHTML = '';
-            listaPaisesElement.appendChild(table);
+            listaProdutosElement.innerHTML = '';
+            listaProdutosElement.appendChild(table);
 
             // Create pagination buttons
             const paginationElement = document.createElement('div');
@@ -93,10 +99,10 @@ async function fetchData() {
             paginationElement.appendChild(nextButton);
 
             // Append pagination buttons to listaPaisesElement
-            listaPaisesElement.appendChild(paginationElement);
+            listaProdutosElement.appendChild(paginationElement);
 
             // Button selected with a diferent class
-            const buttons = listaPaisesElement.querySelectorAll('.btn');
+            const buttons = listaProdutosElement.querySelectorAll('.btn');
             buttons[currentPage].classList.add('active');
         }
 
@@ -107,12 +113,11 @@ async function fetchData() {
         handleErrorMessage(error);
     }
 }
-
 function handleErrorMessage(error) {
-    const listaPaisesElement = document.getElementById('listaPaises');
+    const listaProdutosElement = document.getElementById('listaProdutos');
     let errorMessage = `
     <div class="alert alert-danger" role="alert">
      ${error.message}
     </div>`;
-    listaPaisesElement.innerHTML = errorMessage;
+    listaProdutosElement.innerHTML = errorMessage;
 }
