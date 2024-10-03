@@ -1,0 +1,19 @@
+ol {
+    counter-reset: item;
+    margin-left: 20px;
+    /* Indentação da lista */
+}
+
+ol li {
+    display: block;
+    position: relative;
+    padding-left: 60px;
+}
+
+ol li:before {
+    content: counters(item, ".") ". ";
+    /* Formatação da numeração */
+    counter-increment: item;
+    position: absolute;
+    left: 0;
+}
