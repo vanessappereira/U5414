@@ -1,0 +1,45 @@
+:root {
+    --table-header-bg: #e2e2e2;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+    margin-top: 0;
+}
+
+caption {
+    padding: 25px 0 15px;
+    text-align: center;
+    font-weight: bold;
+    color: cadetblue;
+    font-size: 25px;
+}
+
+th,
+td {
+    border: 1px solid var(--table-header-bg);
+    text-align: center;
+    padding: 15px;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    height: 35px;
+}
+
+tr {
+    height: 75px;
+    vertical-align: middle;
+}
+
+td:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+thead th:first-child {
+    border: none;
+    background-color: transparent;
+}

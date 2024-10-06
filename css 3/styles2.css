@@ -1,0 +1,64 @@
+/* Cores */
+:root {
+    --table-bg-caption: #36709a;
+    --table-header-text-color: #fff;
+    --table-bg-row-country: #DDDDDD;
+    --table-bg-row-museum: #4b4b4b;
+    --table-bg-odd-row: #c2c2c2;
+
+}
+/* Tabela com 600px de largura alinhamento vertical e centro */
+/* Altura das linhas: altura de 30px */
+.table {
+    width: 600px;
+    border-collapse: separate;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+/* Caption da tabela: centralizado, com padding de 20px e cor */
+.table-title {
+    padding: 20px;
+    font-weight: bold;
+    color: var(--table-bg-caption);
+}
+
+/* Cabeçalho da tabela: Nomes dos Países e Museus a negrito, altura */
+.theader {
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* Ocultar o campo vazio */
+.theader-empty {
+    visibility: hidden;
+}
+
+/* classe Países */
+.theader-country {
+    background-color: var(--table-bg-row-country);
+}
+
+/* classe Museus */
+.theader-museum {
+    background-color: var(--table-bg-row-museum);
+    color: var(--table-header-text-color);
+}
+
+/* Coluna do ano: largura de 40px */
+.theader-museum th {
+    width: 40px;
+}
+
+/* Coluna do número de visitantes: largura de 140px */
+.tbody tr td {
+    width: 140px;
+}
+
+/* Linhas ímpares: cor de fundo, negrito */
+.tbody tr:nth-child(odd) {
+    background-color: var(--table-bg-odd-row);
+    font-weight: bold;
+}
