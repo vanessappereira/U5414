@@ -1,0 +1,47 @@
+/* Base Colors */
+:root {
+    --header-title-color: #16374F;
+    --base-bg-options: #DCDCDC;
+    --base-text-options: cornflowerblue;
+}
+
+body {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.title h1 {
+    background-color: var(--header-title-color);
+    color: azure;
+    line-height: 75px;
+}
+
+.base {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.table-images td {
+    text-align: center;
+}
+
+.table-images img {
+    width: 150px;
+}
+
+.table-footer {
+    margin-top: 25px;
+}
+
+#mainImg {
+    width: 500px;
+    padding-bottom: 10px;
+}
+
+.footer {
+    background-color: var(--header-title-color);
+    color: azure;
+    line-height: 35px;
+    padding: 10px;
+}
