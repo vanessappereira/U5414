@@ -22,16 +22,6 @@ section {
   border-radius: 30%;
 }
 
-/* Navigation Styles */
-.navSticky {
-  position: sticky;
-  top: 0;
-  background-color: #fff;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  z-index: 100;
-}
-
 /* About Styles */
 .about {
   margin-left: 7.5px;
@@ -74,22 +64,4 @@ section {
 #final-text {
   align-self: center;
   width: 50%;
-}
-
-/* Bottom Page Styles */
-
-.bottomPage {
-  height: 50px;
-  background-color: #f7f7f7;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.bottomPage a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #337ab7;
-  /* add a default text color */
 }
