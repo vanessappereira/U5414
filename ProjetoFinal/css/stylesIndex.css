@@ -55,8 +55,10 @@ body {
   text-align: center;
 }
 
-.aldeiaSlides img {
+.aldeiaSlides img,
+iframe {
   height: 500px;
+  border-radius: 10%;
 }
 
 /* Next & previous buttons */
@@ -89,15 +91,21 @@ body {
 }
 
 /* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+.text-container {
+  text-align: center;
+  width: 100%;
   position: absolute;
   bottom: 8px;
-  width: 100%;
-  text-align: center;
-  background-color: #717171;
+}
+
+.text {
+  display: inline-block;
+  padding: 10px 15px;
+  /* semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #f2f2f2;
+  font-size: 15px;
+  border-radius: 15px;
 }
 
 /* The dots/bullets/indicators */
