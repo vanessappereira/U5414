@@ -17,8 +17,9 @@ A página principal deverá ser constituída por quatro zonas:
 • nav, a qual deverá integrar links que permitirão a navegação dentro do Web Site; 
     em termos de estrutura, a barra de navegação deverá ser semelhante ao exemplo;
 • main, que deverá integrar um Slideshow (Bootstrap ou jQuery), o qual deverá conter uma imagem de cada uma das cinco aldeias; 
-    a imagem deverá integrar uma hiperligação para a página da aldeia a que diz respeito; 
-    deverá ainda integrar ainda integrar o vídeo promocional das aldeias históricas - https://www.youtube.com/watch?v=kP2OtQrVm1o&t;
+    - a imagem deverá integrar uma hiperligação para a página da aldeia a que diz respeito; 
+    - deverá ainda integrar ainda integrar o vídeo promocional das aldeias históricas 
+        - https://www.youtube.com/watch?v=kP2OtQrVm1o&t;
 • footer, no qual deverá ser colocado o nome do autor do projeto;
 
 A página referente a cada aldeia deverá conter os mesmos header e nav que a página principal; em termos de informação, poderão ser consideradas as imagens e texto fornecidos; deverá ainda integrar: 

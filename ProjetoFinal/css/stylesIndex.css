@@ -1,54 +1,116 @@
 /* Global Styles */
-
 @import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+
+/* Base */
+:root {
+  --text-font-family: "Arima", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --primary-color: rgb(193, 163, 98);
+  --secondary-color: rgb(171, 5, 248);
+  --text-color: #212121;
+  --background-color: #fff;
+  --footer-background: #f7f7f7;
+  --link-color: #337ab7;
+}
+
 
 * {
   box-sizing: border-box;
   margin: 5px;
-  scroll-behavior: smooth;
+  padding: 0;
 }
 
 body {
-  font-family: "Arima", system-ui;
-  color: #1f3545;
-}
-
-.navbar-brand img {
-  width: 50px;
-  /* Estilo arredondado */
-  border-radius: 30%;
+  font-family: var(--text-font-family);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
 /* Navigation Styles */
 .navSticky {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: var(--background-color);
   border-bottom: 1px solid #ddd;
   z-index: 100;
+  padding: 10px 0;
 }
 
-/* Bottom Page Styles */
+.navbar-brand img {
+  width: 50px;
+  border-radius: 30%;
+}
+
+/* Footer Styles */
 .bottomPage {
-  height: 50px;
-  background-color: #f7f7f7;
-  padding: 10px;
+  background-color: var(--footer-background);
+  padding: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .bottomPage a {
-  margin: 0 15px;
   text-decoration: none;
-  color: #337ab7;
+  color: var(--link-color);
+  transition: color 0.3s ease;
 }
+
+.bottomPage a:hover {
+  color: var(--primary-color);
+}
+
+.bottomPage em {
+  text-align: center;
+}
+
+/* Button Styles */
+.button {
+  cursor: pointer;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: var(--primary-color);
+  background-color: transparent;
+  font-weight: 600;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: var(--primary-color);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: var(--text-color);
+  scale: 1.1;
+  box-shadow: 0 0 20px rgba(193, 163, 98, 0.4);
+}
+
+.button:active {
+  scale: 1;
+}
+
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .aldeiaSlides {
@@ -56,9 +118,11 @@ body {
 }
 
 .aldeiaSlides img,
-iframe {
+.aldeiaSlides iframe {
   height: 500px;
-  border-radius: 10%;
+  border-radius: 10px;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /* Next & previous buttons */
@@ -67,11 +131,10 @@ iframe {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
+  transform: translateY(-50%);
   padding: 16px;
-  color: rgb(171, 5, 248);
-  font-weight: bolder;
+  color: var(--secondary-color);
+  font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -101,7 +164,6 @@ iframe {
 .text {
   display: inline-block;
   padding: 10px 15px;
-  /* semi-transparent background */
   background-color: rgba(0, 0, 0, 0.9);
   color: #f2f2f2;
   font-size: 15px;
@@ -123,20 +185,4 @@ iframe {
 .active,
 .dot:hover {
   background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
 }

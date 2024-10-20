@@ -1,12 +1,12 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Next/previous controlos
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// Thumbnail controlos da imagem
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -25,4 +25,11 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+}
+
+function login(){
+    alert("Login");
+}
+function register(){
+    alert("Registo");
 }
