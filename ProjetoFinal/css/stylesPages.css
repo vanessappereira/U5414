@@ -1,23 +1,6 @@
-/* Global Styles */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
+section {
   margin: 15px;
   font-family: Arial, sans-serif;
-}
-
-img {
-  width: 40%;
-  height: 200px;
-  object-fit: cover;
-  margin: 10px;
-  /* Estilo arredondado */
-  border-radius: 10px;
 }
 
 /* Title Group Styles */
