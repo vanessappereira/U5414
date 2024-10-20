@@ -1,0 +1,57 @@
+Programação Web Cliente
+
+Projeto – Aldeias históricas
+
+Implementação de um Web Site que permita disponibilizar informação referente a um conjunto de aldeias/locais históricos; deverá considerar a seguinte estrutura:
+
+página inicial
+    - Almeida
+    - Castelo Rodrigo
+    - Linhares da Beira
+    - Marialva
+    - Monsanto
+    - Registo / Login
+
+A página principal deverá ser constituída por quatro zonas:
+• header, na qual deverão constar um título e logotipo do projeto;
+• nav, a qual deverá integrar links que permitirão a navegação dentro do Web Site; 
+    em termos de estrutura, a barra de navegação deverá ser semelhante ao exemplo;
+• main, que deverá integrar um Slideshow (Bootstrap ou jQuery), o qual deverá conter uma imagem de cada uma das cinco aldeias; 
+    a imagem deverá integrar uma hiperligação para a página da aldeia a que diz respeito; 
+    deverá ainda integrar ainda integrar o vídeo promocional das aldeias históricas - https://www.youtube.com/watch?v=kP2OtQrVm1o&t;
+• footer, no qual deverá ser colocado o nome do autor do projeto;
+
+A página referente a cada aldeia deverá conter os mesmos header e nav que a página principal; em termos de informação, poderão ser consideradas as imagens e texto fornecidos; deverá ainda integrar: 
+• informação texto;
+• um SlideShow (Bootstrap ou jQuery) com fotos do local;
+• um mapa (Google Maps) com a localização;
+• informação sobre a previsão climatérica para o local (a obter a partir da API https://api.ipma.pt/, método Previsão Meteorológica Diária até 5 dias agregada por Local); 
+    Almeida, Castelo Rodrigo, Linhares da Beira e Marialva pertencem ao distrito da Guarda; 
+    Monsanto pertence ao distrito de Castelo Branco;
+• um ou mais vídeos sobre o local;
+• outras informações relevantes (exemplos - o que visitar, onde comer…);
+
+A página de registo deverá conter os mesmos header e nav que a página principal; deverá ainda integrar um formulário que permita efetuar o registo dos utilizadores; 
+    serão necessárias as seguintes informações:
+        • Nome, obrigatório;
+        • Email, obrigatório; necessário validar o formato;
+        • Nome de utilizador, obrigatório; mínimo de 6 e máximo de 20 caracteres;
+        • Password, obrigatório; mínimo de 6 e máximo de 15 caracteres;
+
+A opção de Login deverá estar disponível na página principal e nas páginas referentes a cada aldeia e deverá ser mostrada com recurso a uma DIV modal (Boostrap); deverá integrar:
+• controlos que permitam definir o nome de utilizador e a password;
+• controlos (button) que permitam ocultar a DIV ou confirmar o login;
+
+Obrigatório:
+• A estrutura de cada página deverá ser efetuada com base nos elementos HTML 5 EXEMPLO – header, nav, section, article, footer;
+• A formatação deverá ser definida em ficheiros CSS;
+• Estrutura da barra de navegação de acordo com a imagem apresentada;
+• Inclusão de Slideshow (Bootstrap ou jQuery) na página principal e nas páginas das aldeias;
+• Modal DIV para efetuar o login;
+• Inclusão de vídeos e mapas nas páginas referentes às aldeias;
+
+Todos os elementos (texto e imagens) utilizados neste documento e na elaboração do trabalho foram obtidos a partir dos Web Sites:
+• https://aldeiashistoricasdeportugal.com/
+• https://www.visitportugal.com/pt-pt/node/73751
+• https://turismodocentro.pt/artigo/as-12-aldeias-historicas-mesmo-aqui-a-beira/
+• http://www.turismodeportugal.pt/pt/Paginas/homepage.aspx

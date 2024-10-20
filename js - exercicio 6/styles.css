@@ -1,0 +1,8 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.tabela {
+    margin-left: 20px;    
+}
