@@ -19,24 +19,21 @@ async function fetchMeteorologia(districtId, districtName) {
     const response = await fetch(apiURL);
     const dataForecast = await response.json();
 
-    let meteoHTML = '<table class="tabela">';
+    let meteoHTML = '<table class="table">';
     for (const item of dataForecast.data) {
         const imageSrc = await getImagemPrecipitacao(item.precipitaProb);
 
         meteoHTML += `
         <tr >
-            <td>Date: ${item.forecastDate}</td>
+            <td>Date:<br>${item.forecastDate}</td>
             <td><img src="../images/${imageSrc}" height="45" alt="Weather Image"></td>
-            <td>Min Temperatura: ${item.tMin}°C</td>
-            <td>Max Temperatura: ${item.tMax}°C</td>
+            <td>Min Temperatura:<br>${item.tMin}°C</td>
+            <td>Max Temperatura:<br>${item.tMax}°C</td>
         </tr>`;
     }
     meteoHTML += '</table>';
-    document.getElementById('previsao').innerHTML += `<h5>Distrito de ${districtName}</h5>${meteoHTML}`;
+    document.getElementById('previsao').innerHTML += `<h5 class="active">Distrito de ${districtName}</h5>${meteoHTML}`;
 }
-
-
-
 
 async function obterPrevisao() {
     const url = 'https://api.ipma.pt/open-data/distrits-islands.json';
@@ -80,3 +77,4 @@ async function obterPrevisao() {
     }
 }
 window.onload = obterPrevisao; // Fetch distritos no reload
+

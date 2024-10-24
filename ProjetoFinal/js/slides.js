@@ -1,12 +1,12 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controlos
+// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail controlos da imagem
+// Thumbnail controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -27,9 +27,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-function login(){
-    alert("Login");
-}
-function register(){
-    alert("Registo");
-}
+// Automatic slide change
+setInterval(function() {
+    plusSlides(1); // Change to the next slide
+}, 3000); // Change slide every 3 seconds
