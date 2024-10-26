@@ -1,17 +1,16 @@
 const SLIDE_INTERVAL = 3000;
 const IMAGE_SOURCES = {
     "Almeida": [
-        { src: "../images/almeida/o-cacador.jpg", alt: "Almeida Imagens" },
         { src: "../images/almeida/almeida1.jpg", alt: "Almeida Imagens" },
         { src: "../images/almeida/almeida2.jpg", alt: "Almeida Imagens" },
         { src: "../images/almeida/almeida3.jpg", alt: "Almeida Imagens" },
         { src: "../images/almeida/almeida4.jpg", alt: "Almeida Imagens" },
         { src: "../images/almeida/almeida5.jpg", alt: "Almeida Imagens" },
         { src: "../images/almeida/almeida6.jpg", alt: "Almeida Imagens" },
-        { src: "../images/almeida/almeida7.jpg", alt: "Almeida Imagens" }
+        { src: "../images/almeida/almeida7.jpg", alt: "Almeida Imagens" },
+        { src: "../images/almeida/o-cacador.jpg", alt: "Almeida Imagens" }
     ],
     "Castelo Rodrigo": [
-        { src: "../images/castelo rodrigo/taverna-da-matilde.jpg", alt: "Castelo Rodrigo Imagens" },
         { src: "../images/castelo rodrigo/castelo_rodrigo1.jpg", alt: "Castelo Rodrigo Imagens" },
         { src: "../images/castelo rodrigo/castelo_rodrigo2.jpg", alt: "Castelo Rodrigo Imagens" },
         { src: "../images/castelo rodrigo/castelo_rodrigo3.jpg", alt: "Castelo Rodrigo Imagens" },
@@ -19,10 +18,10 @@ const IMAGE_SOURCES = {
         { src: "../images/castelo rodrigo/castelo_rodrigo5.jpg", alt: "Castelo Rodrigo Imagens" },
         { src: "../images/castelo rodrigo/castelo_rodrigo6.jpg", alt: "Castelo Rodrigo Imagens" },
         { src: "../images/castelo rodrigo/castelo_rodrigo7.jpg", alt: "Castelo Rodrigo Imagens" },
-        { src: "../images/castelo rodrigo/castelo_rodrigo8.jpg", alt: "Castelo Rodrigo Imagens" }
+        { src: "../images/castelo rodrigo/castelo_rodrigo8.jpg", alt: "Castelo Rodrigo Imagens" },
+        { src: "../images/castelo rodrigo/taverna-da-matilde.jpg", alt: "Castelo Rodrigo Imagens" }
     ],
     "Linhares da Beira": [
-        { src: "../images/linhares da beira/Cova-da-Loba.jpg", alt: "Linhares da Beira Imagens" },
         { src: "../images/linhares da beira/linhares1.jpg", alt: "Linhares da Beira Imagens" },
         { src: "../images/linhares da beira/linhares2.jpg", alt: "Linhares da Beira Imagens" },
         { src: "../images/linhares da beira/linhares3.jpg", alt: "Linhares da Beira Imagens" },
@@ -31,7 +30,8 @@ const IMAGE_SOURCES = {
         { src: "../images/linhares da beira/linhares6.jpg", alt: "Linhares da Beira Imagens" },
         { src: "../images/linhares da beira/linhares7.jpg", alt: "Linhares da Beira Imagens" },
         { src: "../images/linhares da beira/linhares8.jpg", alt: "Linhares da Beira Imagens" },
-        { src: "../images/linhares da beira/linhares9.jpg", alt: "Linhares da Beira Imagens" }
+        { src: "../images/linhares da beira/linhares9.jpg", alt: "Linhares da Beira Imagens" },
+        { src: "../images/linhares da beira/Cova-da-Loba.jpg", alt: "Linhares da Beira Imagens" }
     ],
     "Marialva": [
         { src: "../images/marialva/marialva1.jpg", alt: "Marialva Imagens" },
@@ -42,7 +42,8 @@ const IMAGE_SOURCES = {
         { src: "../images/marialva/marialva6.jpg", alt: "Marialva Imagens" },
         { src: "../images/marialva/marialva7.jpg", alt: "Marialva Imagens" },
         { src: "../images/marialva/marialva8.jpg", alt: "Marialva Imagens" },
-        { src: "../images/marialva/marialva9.jpg", alt: "Marialva Imagens" }
+        { src: "../images/marialva/marialva9.jpg", alt: "Marialva Imagens" },
+        { src: "../images/marialva/PedeCabra.jpg", alt: "Marialva Imagens"}
     ],
     "Monsanto": [
         { src: "../images/monsanto/monsanto1.jpg", alt: "Monsanto Imagens" },
@@ -53,7 +54,8 @@ const IMAGE_SOURCES = {
         { src: "../images/monsanto/monsanto6.jpg", alt: "Monsanto Imagens" },
         { src: "../images/monsanto/monsanto7.jpg", alt: "Monsanto Imagens" },
         { src: "../images/monsanto/monsanto8.jpg", alt: "Monsanto Imagens" },
-        { src: "../images/monsanto/monsanto9.jpg", alt: "Monsanto Imagens" }
+        { src: "../images/monsanto/monsanto9.jpg", alt: "Monsanto Imagens" },
+        { src: "../images/monsanto/CasadaVelhaFonte.jpg", alt: "Monsanto Imagens"}
     ]
 };
 let slideIndex = 1;
