@@ -24,6 +24,12 @@ section {
   flex-direction: row;
 }
 
+#infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;  
+}
+
 /* Hide these sections initially */
 #villageHistory,
 #villageInfo,

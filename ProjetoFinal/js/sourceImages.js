@@ -1,4 +1,5 @@
-const imagesAlmeida = {
+const SLIDE_INTERVAL = 3000;
+const IMAGE_SOURCES = {
     "Almeida": [
         { src: "../images/almeida/o-cacador.jpg", alt: "Almeida Imagens" },
         { src: "../images/almeida/almeida1.jpg", alt: "Almeida Imagens" },
@@ -33,7 +34,6 @@ const imagesAlmeida = {
         { src: "../images/linhares da beira/linhares9.jpg", alt: "Linhares da Beira Imagens" }
     ],
     "Marialva": [
-        { src: "../images/marialva/PedeCabra.jpg", alt: "Marialva Imagens" },
         { src: "../images/marialva/marialva1.jpg", alt: "Marialva Imagens" },
         { src: "../images/marialva/marialva2.jpg", alt: "Marialva Imagens" },
         { src: "../images/marialva/marialva3.jpg", alt: "Marialva Imagens" },
@@ -44,64 +44,48 @@ const imagesAlmeida = {
         { src: "../images/marialva/marialva8.jpg", alt: "Marialva Imagens" },
         { src: "../images/marialva/marialva9.jpg", alt: "Marialva Imagens" }
     ],
+    "Monsanto": [
+        { src: "../images/monsanto/monsanto1.jpg", alt: "Monsanto Imagens" },
+        { src: "../images/monsanto/monsanto2.jpg", alt: "Monsanto Imagens" },
+        { src: "../images/monsanto/monsanto3.jpg", alt: "Monsanto Imagens" },
+        { src: "../images/monsanto/monsanto4.jpg", alt: "Monsanto Imagens" },
+        { src: "../images/monsanto/monsanto5.jpg", alt: "Monsanto Imagens" },
+        { src: "../images/monsanto/monsanto6.jpg", alt: "Monsanto Imagens" },
+        { src: "../images/monsanto/monsanto7.jpg", alt: "Monsanto Imagens" },
+        { src: "../images/monsanto/monsanto8.jpg", alt: "Monsanto Imagens" },
+        { src: "../images/monsanto/monsanto9.jpg", alt: "Monsanto Imagens" }
+    ]
 };
+let slideIndex = 1;
+showSlides(slideIndex);
 
-let slideIndex = 0;
-
-function showSlides() {
-    const slideshowContainer = document.getElementById("slideshowContainer");
-    const dotContainer = document.getElementById("dotContainer");
-
-    // Clear existing content
-    slideshowContainer.innerHTML = '';
-    dotContainer.innerHTML = '';
-
-    // Create image elements and dots
-    imagesAlmeida.forEach((image, index) => {
-        const slideDiv = document.createElement("div");
-        slideDiv.className = "aldeiaSlides";
-
-        const img = document.createElement("img");
-        img.src = image.src;
-        img.alt = image.alt;
-
-        slideDiv.appendChild(img);
-        slideshowContainer.appendChild(slideDiv);
-
-        // Create dot
-        const dot = document.createElement("span");
-        dot.className = "dot";
-        dot.onclick = () => currentSlide(index + 1); // Adjust index for 1-based slide
-        dotContainer.appendChild(dot);
-    });
-
-    showCurrentSlide();
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-function showCurrentSlide() {
-    const slides = document.getElementsByClassName("aldeiaSlides");
-    const dots = document.getElementsByClassName("dot");
+// Thumbnail controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = (i === slideIndex) ? "block" : "none";
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("aldeiaSlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    for (let i = 0; i < dots.length; i++) {
+    for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    dots[slideIndex].className += " active";
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
-function plusSlides(n) {
-    slideIndex += n;
-    if (slideIndex >= imagesAlmeida.length) slideIndex = 0;
-    if (slideIndex < 0) slideIndex = imagesAlmeida.length - 1;
-    showCurrentSlide();
-}
-
-function currentSlide(n) {
-    slideIndex = n - 1;
-    showCurrentSlide();
-}
-
-// Initialize the slideshow
-showSlides();
+// Automatic slide change
+setInterval(function () {
+    plusSlides(1); // Change to the next slide
+}, SLIDE_INTERVAL); // Change slide every 3 seconds
