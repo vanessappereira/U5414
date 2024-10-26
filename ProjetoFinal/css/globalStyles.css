@@ -157,7 +157,3 @@ body {
 .bottomPage a:hover {
     color: var(--primary-color);
 }
-
-.bottomPage em {
-    text-align: center;
-}

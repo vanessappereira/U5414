@@ -58,11 +58,38 @@
 				</div>
 				<!-- Registo/Login -->
 				<div class="d-flex ms-auto">
-					<a class="btn button" onclick="login()" href="" role="button">Login</a>
-					<a class="btn button" onclick="register()" href="" role="button">Registar</a>
+					<a class="btn button" data-bs-toggle="modal" data-bs-target="#loginModal" role="button">Login</a>
+					<a class="btn button" href="registerPage.html" role="button">Registar</a>
 				</div>
 			</div>
 		</nav>
+	</div>
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="loginModalLabel">Login</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="loginForm">
+						<div class="mb-3">
+							<label for="usernameLogin" class="form-label">Nome de utilizador</label>
+							<input type="text" class="form-control" id="usernameLogin" required>
+						</div>
+						<div class="mb-3">
+							<label for="passwordLogin" class="form-label">Password</label>
+							<input type="password" class="form-control" id="passwordLogin" required>
+						</div>
+						<div id="loginErrorMessage" class="error text-danger"></div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ocultar</button>
+					<button type="button" class="btn btn-primary" onclick="confirmLogin()">Confirmar</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- About -->
 	<section class="about">
