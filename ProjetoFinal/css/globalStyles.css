@@ -146,6 +146,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    /* Ensure the footer takes the full width of the window */
+    position: relative;
+    /* Optional: if you want to position it relative to its normal position */
+    position: sticky;
+    bottom: 0;
+
 }
 
 .bottomPage a {

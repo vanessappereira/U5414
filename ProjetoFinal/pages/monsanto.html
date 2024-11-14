@@ -23,47 +23,45 @@
 
 <body>
     <!-- Navbar  -->
-    <div class="navSticky">
-        <!-- Titulo -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../images/castle.svg" alt="castle" />
-                    Aldeias históricas
-                </a>
-                <!-- Navbar Para responsavidade quando ecrã reduzido -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="almeida.html">Almeida</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="castelo_rodrigo.html">Castelo Rodrigo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="linhares_beira.html">Linhares da
-                                Beira</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="marialva.html">Marialva</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page">Monsanto</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Registo/Login -->
-                <div class="d-flex ms-auto">
-                    <a class="btn button" data-bs-toggle="modal" data-bs-target="#loginModal" role="button">Login</a>
-                    <a class="btn button" href="registerPage.html" role="button">Registar</a>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navSticky">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/castle.svg" alt="castle" />
+                Aldeias históricas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="almeida.html">Almeida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="castelo_rodrigo.html">Castelo Rodrigo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="linhares_beira.html">Linhares da
+                            Beira</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marialva.html">Marialva</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page">Monsanto</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
+            <!-- Registo/Login -->
+            <div class="d-flex ms-auto">
+                <a class="btn button" data-bs-toggle="modal" data-bs-target="#loginModal" role="button">Login</a>
+                <a class="btn button" href="registerPage.html" role="button">Registar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -91,21 +89,23 @@
             </div>
         </div>
     </div>
-    <!-- About -->
+
+    <!-- About Section -->
     <section class="about">
         <div class="text-container">
-            <div class="text" id="title">Monsanto</div>
+            <h1 id="title">Monsanto</h1>
             <div class="d-flex ms-auto">
-                <a class="btn button" onclick="showAbout(event)" href="#" role="button">Sobre</a>
-                <a class="btn button" onclick="showHistory(event)" href="#" role="button">História</a>
-                <a class="btn button" onclick="showInfo(event)" href="#" role="button">Infos úteis</a>
-                <a class="btn button" onclick="showGallery(event)" href="#" role="button">Galeria</a>
+                <a class="btn button" onclick="showAbout(event)">Sobre</a>
+                <a class="btn button" onclick="showHistory(event)">História</a>
+                <a class="btn button" onclick="showInfo(event)">Infos úteis</a>
+                <a class="btn button" onclick="showGallery(event)">Galeria</a>
                 <a class="btn button"
                     href="https://aldeiashistoricasdeportugal.com/wp-content/uploads/2019/02/AF_MONSANTO_folheto_aldeia_PT_web.pdf"
                     role="button">Folheto da aldeia</a>
             </div>
+
+            <!-- About Village -->
             <div class="about" id="aboutVillage">
-                <!-- Paragraph and Image -->
                 <div class="about-content">
                     <p id="aboutText">
                         Alcandorada num cabeço que se impõe ao olhar na maior parte dos horizontes, a Aldeia Histórica
@@ -119,6 +119,8 @@
                     <img src="../images/monsanto/CasadaVelhaFonte.jpg" alt="Monsanto Imagens" id="aboutImage">
                 </div>
             </div>
+
+            <!-- Village History -->
             <div id="villageHistory">
                 <h2>História</h2>
                 <div class="history-content">
@@ -173,6 +175,8 @@
                     </p>
                 </div>
             </div>
+
+            <!-- Village Info -->
             <div id="villageInfo">
                 <h2>O que ver</h2>
                 <div class="about" id="infos">
@@ -207,6 +211,7 @@
                 </div>
             </div>
 
+            <!-- Village Gallery -->
             <div id="villageGallery" class="slideshow-container">
                 <div class="aldeiaSlides">
                     <img src="../images/monsanto/monsanto1.jpg" alt="Monsanto Imagens" />
