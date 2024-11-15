@@ -1,3 +1,4 @@
+const SLIDE_INTERVAL = 4000;
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -30,4 +31,4 @@ function showSlides(n) {
 // Automatic slide change
 setInterval(function() {
     plusSlides(1); // Change to the next slide
-}, 3000); // Change slide every 3 seconds
+}, SLIDE_INTERVAL); // Change slide every 4 seconds

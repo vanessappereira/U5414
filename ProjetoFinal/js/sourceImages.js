@@ -1,4 +1,4 @@
-const SLIDE_INTERVAL = 3000;
+const SLIDE_INTERVAL = 4000;
 const IMAGE_SOURCES = {
     "Almeida": [
         { src: "../images/almeida/almeida1.jpg", alt: "Almeida Imagens" },
@@ -90,4 +90,4 @@ function showSlides(n) {
 // Automatic slide change
 setInterval(function () {
     plusSlides(1); // Change to the next slide
-}, SLIDE_INTERVAL); // Change slide every 3 seconds
+}, SLIDE_INTERVAL); // Change slide every 4 seconds

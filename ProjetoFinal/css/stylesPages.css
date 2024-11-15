@@ -51,14 +51,18 @@ section {
 
 #aboutImage {
   width: 100%;
-  /* Make the image take the full width of the container */
-  height: auto;
-  /* Maintain the aspect ratio */
   max-width: 70%;
-  /* Ensure it doesn't exceed the container's width */
   border-radius: 10px;
+  max-height: 70%;
 }
 
+#infoImage {
+  width: 100%;
+  max-width: 70%;
+  max-height: 40vh;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
 .register {
   margin-left: 25%;

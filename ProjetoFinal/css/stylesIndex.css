@@ -1,8 +1,8 @@
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
+  max-width: 80%;
   margin: 20px auto;
+  flex: 2;
 }
 
 .aldeiaSlides {
@@ -48,9 +48,9 @@
 /* Caption text */
 .text-container {
   text-align: center;
-  width: 100%;
+  width: 95%;
   position: absolute;
-  bottom: 8px;
+  top: 8px;
 }
 
 .text {
@@ -77,4 +77,30 @@
 .active,
 .dot:hover {
   background-color: #717171;
+}
+
+.homepage {
+  display: flex;
+  /* Enable flexbox layout */
+  flex-direction: row;
+}
+
+.weather-section {
+  flex: 1;
+  top: 20px;
+}
+
+.weather-display {
+  right: 20px;
+  /* Distância da direita */
+  font-size: 18px;
+  /* Tamanho da fonte */
+  color: var(--primary-color);
+  /* Cor do texto */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fundo semi-transparente */
+  padding: 10px;
+  /* Espaçamento interno */
+  border-radius: 5px;
+  /* Bordas arredondadas */
 }
